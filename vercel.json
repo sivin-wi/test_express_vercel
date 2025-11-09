@@ -1,7 +1,11 @@
 {
-    "functions":{
-        "api/index.js":{
-            "runtime": "nodejs22.17.1"
-        }
+  "version": 2,
+  "functions": {
+    "api/index.js": {
+      "runtime": "nodejs20.x"
     }
+  },
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ]
 }
